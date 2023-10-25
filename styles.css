@@ -80,7 +80,7 @@ body {
     top: 0;
     height: 330px;
     width: 380px;
-    transition: all ease-in-out 1s;
+    transition: all ease-in 1s;
     flex-direction: column;
     opacity: 0;
 }
