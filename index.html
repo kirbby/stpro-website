@@ -9,6 +9,9 @@
 </head>
 
 <body>
+    <div class="the-box">
+        <div class="the-title">Hier entsteht eine neue Webseite</div>
+    </div>
     <div class="present">
         <div class="lid">
             <span></span>
@@ -20,10 +23,21 @@
             <a style="font-size: 10px;" href='https://www.redgifs.com/watch/quietcooperativetick'>via RedGIFs</a>
         </div>
         <div class="box">
-            <span></span>
+            <span>
+                <div class="voucher">Gutschein für eine "stpro" Domain im Wert von 30€</div>
+            </span>
             <span></span>
         </div>
     </div>
 </body>
+
+<script>
+    window.onload = function () {
+        setTimeout(function () {
+            document.querySelector('.the-box').style.display = 'none';
+            document.querySelector('.present').style.display = 'flex';            
+        }, 2000);
+    }
+</script>
 
 </html>

@@ -1,3 +1,27 @@
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+    font-family: GeoSlb712MdBT, Georgia, serif;
+    font-style: normal;
+}
+
+.the-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.the-title {
+    padding: 5px;
+    font-size: 3em;
+    text-align: center;
+}
+
 body {
     background: #000;
     display: flex;
@@ -14,13 +38,14 @@ body {
     align-items: center;
     margin: 500px auto 0;
     position: relative;
+    display: none;
 }
 
 .box,
 .lid {
     background: rgb(0, 60, 150);
     background-position: 0 0, 25px 25px;
-    background-size: 50px 50px;   
+    background-size: 50px 50px;
     position: absolute;
     margin: 0 auto;
 }
@@ -54,10 +79,23 @@ body {
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
 }
 
+.voucher {
+    opacity: 0;
+    transition: all ease-in 1s;
+}
+
 .box span:first-child {
     width: 100%;
     height: 60px;
     top: 80px;
+    z-index: 2;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
 }
 
 .box span:last-child,
@@ -65,6 +103,7 @@ body {
     width: 60px;
     height: 100%;
     left: 170px;
+    z-index: 1;
 }
 
 .lid span {
@@ -98,5 +137,9 @@ body {
 
 .present:hover .promo {
     top: -500px;
+    opacity: 1;
+}
+
+.present:hover .voucher {
     opacity: 1;
 }
