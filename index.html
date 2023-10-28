@@ -12,7 +12,7 @@
     <div class="the-box">
         <div class="the-title">Hier entsteht eine neue Webseite</div>
     </div>
-    <div class="present">       
+    <div class="present" onclick="play()">       
         <div class="oval oval-1">
             <div class="oval-center"></div>
         </div>
@@ -35,15 +35,20 @@
             <span></span>
         </div>
     </div>
+       <audio id="audio" src="club-music-loop.mp3"></audio>
 </body>
 
 <script>
     window.onload = function () {
         setTimeout(function () {
             document.querySelector('.the-box').style.display = 'none';
-            document.querySelector('.present').style.display = 'flex';            
+            document.querySelector('.present').style.display = 'flex';         
         }, 2000);
     }
+    function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
 </script>
 
 </html>
