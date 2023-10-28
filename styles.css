@@ -127,23 +127,22 @@ body {
     margin: 0 0 15px 0;
 }
 
-/* hover effects */
-.present:hover .lid {
+.present.hover .lid {
     top: -600px;
     transform: rotateZ(10deg);
     left: 12px;
 }
 
-.present:hover .oval {
+.present.hover .oval {
     top: -700px;
 }
 
-.present:hover .promo {
+.present.hover .promo {
     top: -500px;
     opacity: 1;
 }
 
-.present:hover .voucher {
+.present.hover .voucher {
     opacity: 1;
 }
 
